@@ -7,7 +7,7 @@ const main = document.querySelector(".main");
 const getWeather = async (city) => {
 	try {
 		const response = await fetch(
-			`//api.weatherapi.com/v1/current.json?key=${API_Key}&q=${city}`
+			`https://api.weatherapi.com/v1/current.json?key=${API_Key}&q=${city}`
 		);
 		const data = await response.json();
 		if (data.error)
