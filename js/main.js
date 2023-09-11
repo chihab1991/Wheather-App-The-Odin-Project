@@ -10,7 +10,6 @@ const getWeather = async (city) => {
 			`//api.weatherapi.com/v1/current.json?key=${API_Key}&q=${city}`
 		);
 		const data = await response.json();
-		console.log(data);
 		if (data.error)
 			return `<div class="error">
 		<h3>${data.error.message}</h3>
